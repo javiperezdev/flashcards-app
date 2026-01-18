@@ -1,6 +1,7 @@
-const Flashcard = ({ flashcard, showAnswer }) => {
+import './Flashcard.css'
+const Flashcard = ({ flashcard, showAnswer, onCardClick }) => {
     return (
-        <div>
+        <div className="card" onClick={onCardClick}>
             <p>{showAnswer ? flashcard.answer : flashcard.question}</p>
         </div>
     )

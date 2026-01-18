@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './App.css'
 import Flashcard from './components/Flashcard'
 
 const initialCards = [
@@ -36,7 +37,6 @@ const initialCards = [
 
 function App() {
   const[newCurrentCard, setNewCurrentCard] = useState(0)
-  // We have to manage the cases in both edges
   const[newShowAnswer, setNewShowAnswer] = useState(false)
   
 
@@ -59,20 +59,20 @@ function App() {
   
   }
 
-  const handleShowAnswer = () => {
-    setNewShowAnswer(true);
+  const handleFlip = () => {
+      setNewShowAnswer(newShowAnswer ? false : true);
   }
 
   return (
-    <div>
-      <h1>Flashcards</h1>
-      {<Flashcard key={initialCards[newCurrentCard].id} flashcard={initialCards[newCurrentCard]} showAnswer={newShowAnswer} />}
-      <button onClick={handlePreviousCard}>previous flashcard</button> 
-      <button onClick={handleShowAnswer}>show answer</button> 
-      <button onClick={handleNextCard}>next flashcard</button> 
-
-    </div>
+      <div className='app-container'>
+        <h1>Flashcards app</h1>
+        {<Flashcard key={initialCards[newCurrentCard].id} flashcard={initialCards[newCurrentCard]} showAnswer={newShowAnswer} onCardClick={handleFlip}/>}
+        <div className='button-row'>
+          <button onClick={handlePreviousCard}>previous flashcard</button> 
+          <button onClick={handleNextCard}>next flashcard</button> 
+        </div>
+      </div>
   )
 }
 
-export default App
+export default App;
