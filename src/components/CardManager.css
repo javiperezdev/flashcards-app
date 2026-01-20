@@ -1,0 +1,23 @@
+.manager-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+}
+
+.input-field {
+    padding: 0.8rem;
+    border-radius: var(--radius);
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: white;
+}

@@ -1,0 +1,11 @@
+.play-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between; 
+}
