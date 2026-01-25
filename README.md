@@ -1,24 +1,35 @@
 # Flashcard Application
 
 ## Description
-This project is a simple flashcard application created as personal project for learning purposes.
+This project is a simple flashcard application created as a personal project for learning purposes, [try the app now!](https://free-flashcards.netlify.app/)
 
-## Features
-Current features of the application:
-* Show the question and answer for each flashcard
-* Ability to move to the next and previous flashcard 
+## Appearance
+
+![question image](photos/img1.png)
+![answer imager](photos/img2.png)
+![alt text](photos/img3.png)
 
 ## Technologies Used
-![React](https://img.shields.io/badge/REACT-20232A?style=flat-square&logo=react&logoColor=61DAFB%22)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JAVASCRIPT-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+## Features
+* **Interactive Flip Cards:** Click any card to instantly toggle between the question and the answer.
+* **Deck Navigation:** Seamlessly cycle through the flashcard deck using "Next" and "Previous" controls.
+* **Responsive Design:** Optimized for a clean viewing experience.
+
 
 ## How to Run the Application
-In the project directory, you can run:
 
-### `npm install`
-Installs the necessary dependencies.
+In the project directory, follow these steps to get started:
 
-### `npm run dev`
-Runs the app in the development mode.
-Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+### 1. Install Dependencies
+Run the following command to install the necessary packages:
+
+``` bash
+npm install
+npm run dev
+```
+
+#### Open http://localhost:5173 to view it in your browser.
